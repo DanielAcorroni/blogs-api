@@ -20,6 +20,11 @@ const validateRegisterUser = [
   validations.validateEmail,
 ];
 
+const validatePost = [
+  validateJWT,
+  validations.validatePostInfo,
+];
+
 app.post('/user', validateRegisterUser, controllers.registerUser);
 
 app.post('/login', validateLogin, controllers.login);
@@ -31,5 +36,7 @@ app.get('/user/:id', validateJWT, controllers.getUserById);
 app.post('/categories', validateJWT, controllers.registerCategorie);
 
 app.get('/categories', validateJWT, controllers.getAllCategories);
+
+app.post('/post', validatePost, controllers.createPost);
 
 module.exports = app;
