@@ -30,4 +30,6 @@ app.get('/user/:id', validateJWT, controllers.getUserById);
 
 app.post('/categories', validateJWT, controllers.registerCategorie);
 
+app.get('/categories', validateJWT, controllers.getAllCategories);
+
 module.exports = app;
