@@ -28,4 +28,6 @@ app.get('/user', validateJWT, controllers.getAllUsers);
 
 app.get('/user/:id', validateJWT, controllers.getUserById);
 
+app.post('/categories', validateJWT, controllers.registerCategorie);
+
 module.exports = app;
