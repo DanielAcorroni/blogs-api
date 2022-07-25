@@ -26,4 +26,6 @@ app.post('/login', validateLogin, controllers.login);
 
 app.get('/user', validateJWT, controllers.getAllUsers);
 
+app.get('/user/:id', validateJWT, controllers.getUserById);
+
 module.exports = app;
