@@ -11,6 +11,14 @@ const validateLogin = [
   validations.validatePassword,
 ];
 
+const validateRegisterUser = [
+  validations.validateDisplayName,
+  validations.validatePassword,
+  validations.validateEmail,
+];
+
+app.post('/user', validateRegisterUser, controllers.registerUser);
+
 app.post('/login', validateLogin, controllers.login);
 
 module.exports = app;
