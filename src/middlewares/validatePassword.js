@@ -8,7 +8,7 @@ module.exports = (req, res, next) => {
   }
   if (password.length < 6) {
     return res.status(400).json(
-      { message: '"password" length must be 6 characters long' },
+      { message: '"password" length must be at least 6 characters long' },
     );
   }
   next();
