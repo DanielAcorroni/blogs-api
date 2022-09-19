@@ -1,6 +1,6 @@
 # Blogs Api
 
-O desafio deste projeto era desenvolver uma Api para um blog utilizando do Node.js em conjunto comm o pacote sequelize e os padrões REST.
+O desafio deste projeto era desenvolver uma Api para um blog utilizando do Node.js em conjunto com o pacote sequelize e os padrões REST.
 > ***OBS: Tanto o Dockerfile quanto o docker-compose.yml foram disponibilizados prontos pela Trybe e não foram desenvolvido por mim!***
 
 ## 🐋 Rodando o projeto utilizando o Docker
